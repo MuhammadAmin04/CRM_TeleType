@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<linkhref
+			="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- build css -->
+		<link rel="stylesheet" href="./dist/output.css" />
+        <link rel="stylesheet" href="./style.css">
+
+		<!-- Box Icon -->
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+
+		<title>TeleType</title>
+	</head>
+	<body>
+
+        <div class="modal-wrapper w-screen h-screen grid place-content-center">
+
+            <div class="modal-content w-[500px] shadow-lg rounded-xl p-10">
+
+                <div class="p-4">
+
+                    <form action="#">
+                        <input type="text" required class="p-3 mb-3 rounded-lg w-full border" placeholder="Enter Fullname">
+                        <input type="text" maxlength="20" class="p-3 mb-3 rounded-lg w-full border" placeholder="Enter username">
+                        <input type="text" required class="p-3 rounded-lg mb-3 w-full border" placeholder="Enter your password">
+                        <input type="text" required class="p-3 rounded-lg mb-3 w-full border" placeholder="Confirm your password">
+                        <button class="bg-indigo-500 text-white font-semibold p-3 w-full rounded-lg focus:bg-indigo-400">Sign Up</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+		<!-- -----------------------  Header -------------------------------- -->
+		<header class="shadow px-7 py-5  bg-[#949494] backdrop-blur-md">
+			<nav class="flex justify-between items-center">
+				<a href="#"><img src="./assets/images/Link ⏵ SVG.svg" alt="Logo" /></a>
+
+				<button class="bg-indigo-600 p-4 text-white font-semibold rounded-lg text-xs focus:bg-indigo-400 focus:ring-indigo-400 ">Join</button>
+			</nav>
+		</header>
+		<!-- ------------------------- Header End ----------------------------- -->
+
+		<main>
+			<section class="pt-[41px]">
+            <div class="max-w-[1240px] mx-auto px-5 mb-[31px]">
+                <div class="searchform flex justify-between ">
+
+                    <input id="search_post" type="search" placeholder="Search..." class="grow h-[38px]  max-w-full me-4 border rounded-full text-[#949494] px-6">
+
+                    <button id="search_btn" class="px-[11px] py-2 bg-indigo-600 text-white rounded-full w-[146px]  focus:bg-indigo-400 focus:ring-indigo-400 ">Search Posts</button>
+
+                </div>
+
+                <div class="post_wrapper py-[30px]">
+
+                    <div class="post_item shadow-md hover:shadow-xl duration-150 rounded-lg p-4 font-['inter']">
+
+                        <h2 class="post__title text-3xl font-bold leading-10 mb-5">💥 Frontend dasturchilari uchun Top-12 ta tekin API</h2>
+
+                        <p class="post__text mb-[25.5px] leading-[25.5px] text-[17px] font-normal">
+                            Ushbu API'larni ishlatib korib siz dasturlashda asinxron, fake backend bilan ishlab
+                            ozingizni tajribangizni oshirishingiz mumkin. 
+                        </p>
+
+                        <p class="mb-[25.5px]">
+                             Ozingiz API yaratib uni ishlatmoqchi bolsangiz sizga Mockapi.io, JSON Server, Strapi
+                             lar yordam beroladi
+                        </p>
+
+                        <strong class="mb-6 leading-[25.5px]">● MuhammadAmin Tursunmuhammadov</strong>
+
+                        <div class="flex items-center gap-x-3 my-4  ">
+                            <span>April 29, 09:33</span>
+
+                            <div>
+                                <i class='bx bx-show'></i>
+                                <span>54</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+		</main>
+	</body>
+</html>
